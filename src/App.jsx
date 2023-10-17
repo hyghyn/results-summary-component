@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const jsonLink = "../data.json";
+const jsonLink = "./data.json";
 
 export default function App() {
   const [list, setList] = useState([]);
