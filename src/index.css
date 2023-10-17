@@ -22,6 +22,14 @@
   margin: 0;
 }
 
+.app__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 ul {
   list-style: none;
 }
@@ -45,8 +53,21 @@ ul {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 1rem;
 
   & a {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .app__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
   }
 }
