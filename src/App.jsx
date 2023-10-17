@@ -2,16 +2,38 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const jsonLink = "./data.json";
+// const jsonLink = "./data.json";
 
 export default function App() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    (async () => {
-      const data = await fetch(jsonLink).then((res) => res.json());
-      setList(data);
-    })();
+    //   (async () => {
+    //     const data = await fetch(jsonLink).then((res) => res.json());
+    //     setList(data);
+    //   })();
+    setList([
+      {
+        category: "Reaction",
+        score: 80,
+        icon: "./src/assets/icon-reaction.svg",
+      },
+      {
+        category: "Memory",
+        score: 92,
+        icon: "./src/assets/icon-memory.svg",
+      },
+      {
+        category: "Verbal",
+        score: 61,
+        icon: "./src/assets/icon-verbal.svg",
+      },
+      {
+        category: "Visual",
+        score: 72,
+        icon: "./src/assets/icon-visual.svg",
+      },
+    ]);
   }, []);
 
   return (
