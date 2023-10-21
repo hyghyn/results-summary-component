@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 :root {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
 
   /*Primary*/
   --color-light-red: hsl(0, 100%, 67%);
@@ -22,7 +22,7 @@
   margin: 0;
 }
 
-.app__main {
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
